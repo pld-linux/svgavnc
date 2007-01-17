@@ -1,5 +1,5 @@
 Summary:	VNC viewer for svgalib
-Summary(pl):	Klient VNC dla svgalib
+Summary(pl):	Klient VNC dla svgaliba
 Name:		svgavnc
 Version:	0.1
 Release:	1
@@ -9,6 +9,7 @@ Source0:	http://republika.pl/rkd/%{name}-%{version}.tar.bz2
 # Source0-md5:	c444151d587fe368f6ad55b5e8cae2a9
 BuildRequires:	libjpeg-devel
 BuildRequires:	svgalib-devel
+BuildRequires:	xorg-cf-files
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-imake
@@ -16,10 +17,10 @@ BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-SVGALIB version of vncviewer using tight extensions.
+SVGAlib version of vncviewer using tight extensions.
 
 %description -l pl
-Klient VNC dla SVGALIB dla protoko³u 3.3.7t.
+Klient VNC dla SVGAliba. Obs³uguje protokó³ 3.3.7t.
 
 %prep
 %setup -q
@@ -27,6 +28,7 @@ Klient VNC dla SVGALIB dla protoko³u 3.3.7t.
 %build
 xmkmf -a
 %{__make} \
+	CC="%{__cc}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
