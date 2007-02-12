@@ -1,5 +1,5 @@
 Summary:	VNC viewer for svgalib
-Summary(pl):	Klient VNC dla svgaliba
+Summary(pl.UTF-8):   Klient VNC dla svgaliba
 Name:		svgavnc
 Version:	0.1
 Release:	1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 SVGAlib version of vncviewer using tight extensions.
 
-%description -l pl
-Klient VNC dla SVGAliba. Obs≥uguje protokÛ≥ 3.3.7t.
+%description -l pl.UTF-8
+Klient VNC dla SVGAliba. Obs≈Çuguje protok√≥≈Ç 3.3.7t.
 
 %prep
 %setup -q
