@@ -1,5 +1,5 @@
 Summary:	VNC viewer for svgalib
-Summary(pl.UTF-8):   Klient VNC dla svgaliba
+Summary(pl.UTF-8):	Klient VNC dla svgaliba
 Name:		svgavnc
 Version:	0.1
 Release:	1
